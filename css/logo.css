@@ -251,3 +251,45 @@
     bottom: 4px;
   }
 }
+/* Add to logo.css */
+@media screen and (max-width: 480px) {
+  .css-logo {
+    margin-bottom: 20px;
+  }
+
+  .logo-upper1 {
+    font-size: 1.1rem !important;
+    letter-spacing: 1px !important;
+  }
+
+  .logo-upper2 {
+    font-size: 2rem !important;
+    letter-spacing: 1px !important;
+  }
+
+  .logo-lower {
+    font-size: 1.2rem !important;
+    letter-spacing: 2px !important;
+    padding: 0 8px !important;
+  }
+
+  .logo-lower::before,
+  .logo-lower::after {
+    width: 10px !important;
+    height: 1px !important;
+  }
+
+  .logo-lower::before {
+    left: -3px !important;
+  }
+
+  .logo-lower::after {
+    right: -3px !important;
+  }
+
+  .logo-line-bg {
+    width: 180% !important;
+    height: 12px !important;
+    bottom: 3px !important;
+  }
+}

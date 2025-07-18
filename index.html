@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
     <title>
       After the Singularity Games | Future of Interactive Entertainment
     </title>
@@ -40,6 +43,11 @@
     <nav>
       <div class="nav-container">
         <a href="#" class="logo-text"><span></span>ATS GAMES</a>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <div class="nav-links">
           <a href="#">Home</a>
           <a href="#featured-games">Games</a>
@@ -104,7 +112,7 @@
               <span class="game-tag">Sci-Fi</span>
             </div>
             <a
-              href="[STEAM_WISHLIST_LINK]"
+              href="https://store.steampowered.com/app/3810970/Lost_Galaxy_Echoes_of_War/"
               class="btn btn-primary"
               style="display: block; text-align: center; margin-top: 15px"
               >☆ Wishlist on Steam</a
@@ -261,4 +269,30 @@
       }
     });
   });
+
+  // Hamburger menu functionality
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navLinks.classList.toggle("active");
+  });
+
+  // Close menu when clicking on a link
+  document.querySelectorAll(".nav-links a").forEach((link) => {
+    link.addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      navLinks.classList.remove("active");
+    });
+  });
+
+  // Load lighter images for mobile
+  if (window.innerWidth < 768) {
+    document.querySelectorAll("img").forEach((img) => {
+      if (img.dataset.mobileSrc) {
+        img.src = img.dataset.mobileSrc;
+      }
+    });
+  }
 </script>
