@@ -1,0 +1,253 @@
+/* Logo Styles */
+.css-logo {
+  font-family: "Goldman", sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  padding: 20px 0;
+}
+
+.logo-line-bg {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 230%;
+  height: 34px;
+  background: linear-gradient(
+      90deg,
+      transparent 0%,
+      var(--neon-blue) 50%,
+      transparent 100%
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 1px,
+      rgba(0, 243, 255, 0.2) 1px,
+      rgba(0, 243, 255, 0.2) 3px
+    );
+  background-blend-mode: screen;
+  opacity: 0.5;
+  z-index: -1;
+  border-radius: 2px;
+}
+
+.logo-upper1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.logo-upper2 {
+  font-size: 5.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.logo-lower {
+  font-size: 3.4rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-shadow: 0 0 10px var(--neon-blue), 0 0 20px rgba(0, 243, 255, 0.5);
+  position: relative;
+  padding: 0 20px;
+  display: inline-block;
+}
+
+.logo-lower::before,
+.logo-lower::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 3px;
+  background: var(--neon-blue);
+  transform: translateY(-50%);
+}
+
+.logo-lower::before {
+  left: -15px;
+}
+
+.logo-lower::after {
+  right: -15px;
+}
+/* Responsive Logo Adjustments */
+@media screen and (max-width: 768px) {
+  .css-logo {
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }
+
+  .logo-upper1 {
+    font-size: 1.5rem !important; /* Smaller text */
+  }
+
+  .logo-upper2 {
+    font-size: 3rem !important; /* Reduced size */
+  }
+
+  .logo-lower {
+    font-size: 1.8rem !important; /* Smaller main text */
+    letter-spacing: 2px !important; /* Tighter spacing */
+    padding: 0 10px !important; /* Less horizontal padding */
+  }
+
+  .logo-lower::before,
+  .logo-lower::after {
+    width: 15px !important; /* Shorter decorative lines */
+    height: 2px !important; /* Thinner lines */
+  }
+
+  .logo-lower::before {
+    left: -5px !important; /* Adjusted position */
+  }
+
+  .logo-lower::after {
+    right: -5px !important; /* Adjusted position */
+  }
+
+  .logo-line-bg {
+    width: 240% !important; /* Narrower background line */
+    height: 20px !important; /* Shorter height */
+    bottom: 5px !important; /* Better vertical alignment */
+  }
+}
+
+/* Optional: Further adjustments for very small screens */
+@media screen and (max-width: 480px) {
+  .logo-upper1 {
+    font-size: 1.2rem !important;
+  }
+
+  .logo-upper2 {
+    font-size: 2.2rem !important;
+  }
+
+  .logo-lower {
+    font-size: 1.4rem !important;
+  }
+}
+
+.logo-text {
+  font-family: "Goldman", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--neon-blue);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.logo-text span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: var(--neon-pink);
+  border-radius: 50%;
+  margin-right: 10px;
+  animation: blink 2s infinite;
+}
+/* Footer Logo - Proportional Scaling */
+.footer-logo.css-logo {
+  margin: 0 auto; /* Center align */
+  padding: 10px 0;
+  transform: none; /* Remove scaling */
+}
+
+/* Adjust font sizes for footer */
+.footer-logo .logo-upper1 {
+  font-size: 1rem !important; /* Smaller than header */
+}
+
+.footer-logo .logo-upper2 {
+  font-size: 1.9rem !important;
+}
+
+.footer-logo .logo-lower {
+  font-size: 1rem !important;
+  padding: 0 10px !important;
+  position: relative !important; /* Required for absolute positioning of child */
+}
+
+/* Decorative line adjustments */
+.footer-logo .logo-lower::before,
+.footer-logo .logo-lower::after {
+  width: 15px !important;
+  height: 2px !important;
+}
+
+.footer-logo .logo-lower::before {
+  left: -5px !important;
+}
+
+.footer-logo .logo-lower::after {
+  right: -5px !important;
+}
+
+/* Background line */
+.footer-logo .logo-line-bg {
+  width: 150% !important;
+  height: 18px !important;
+  bottom: 6px !important;
+  border: 1px solid red !important;
+}
+/* Footer Logo Line - Fixed */
+.footer-logo.css-logo {
+  position: relative; /* Ensure stacking context */
+}
+
+.footer-logo .logo-lower {
+  position: relative !important; /* Anchor for absolute positioning */
+}
+
+/* Footer Logo Line Background - Corrected Version */
+.footer-logo .logo-lower {
+  position: relative; /* Required for absolute positioning of child */
+  display: inline-block; /* Ensure proper sizing */
+}
+
+.footer-logo .logo-line-bg {
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150%;
+  height: 20px;
+  background: linear-gradient(
+      90deg,
+      transparent 0%,
+      var(--neon-blue) 50%,
+      transparent 100%
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 1px,
+      rgba(0, 243, 255, 0.3) 1px,
+      rgba(0, 243, 255, 0.3) 3px
+    );
+  background-blend-mode: screen;
+  opacity: 0.6;
+  z-index: -1;
+  border-radius: 2px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-logo .logo-line-bg {
+    width: 130%;
+    height: 16px;
+    bottom: 4px;
+  }
+}
