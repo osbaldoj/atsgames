@@ -2,8 +2,8 @@
   "version": "2026-10-23",
   "operatorName": "After The Singularity Games Ltd",
   "supportEmail": "jorgere.1@icloud.com",
-  "privacyURL": "",
-  "supportURL": "",
+  "privacyURL": "https://atsgames.com/fotoswipe/privacy",
+  "supportURL": "https://atsgames.com/fotoswipe/support",
   "eulaURL": "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
   "refundURL": "https://support.apple.com/es-es/118223",
   "documents": [
@@ -11,6 +11,12 @@
       "id": "privacy",
       "title": "Política de privacidad",
       "sections": [
+        {
+          "title": "Responsable y alcance",
+          "paragraphs": [
+            "After The Singularity Games Ltd, con sede en Hong Kong, es responsable del tratamiento descrito en esta política. Puedes contactar con nosotros en el correo indicado en esta página. Esta política cubre FotoSwipe, su soporte y sus páginas en atsgames.com/fotoswipe/."
+          ]
+        },
         {
           "title": "Qué hace FotoSwipe",
           "paragraphs": [
@@ -40,18 +46,35 @@
           ]
         },
         {
-          "title": "Soporte y sitio web",
+          "title": "Consultas de soporte",
           "paragraphs": [
-            "Si contactas voluntariamente por correo, recibiremos la dirección y el contenido que decidas enviar para responder. No se adjuntan fotos ni datos de la biblioteca automáticamente. Evita enviar información sensible que no sea necesaria.",
-            "Las páginas preparadas para FotoSwipe no incorporan cookies, analítica, formularios ni recursos de terceros. El proveedor donde se alojen puede procesar datos técnicos de conexión. Proveedor de alojamiento: {{hostingProvider}}.",
-            "Conservación de las consultas de soporte: {{supportRetention}}."
+            "Si contactas voluntariamente por correo, recibiremos tu dirección, el nombre que figure en el mensaje y el contenido y adjuntos que decidas enviar. Los utilizamos para responder, resolver la incidencia y atender seguimientos relacionados; no para publicidad. No se adjuntan fotos ni datos de la biblioteca automáticamente. Evita enviar fotos originales, credenciales u otra información sensible que no sea necesaria.",
+            "El buzón de soporte utiliza iCloud Mail de Apple. La entrega y el almacenamiento de los mensajes requieren el tratamiento por los proveedores de correo del remitente y del destinatario. Solo las personas autorizadas para atender el soporte deben acceder a las consultas.",
+            "Conservación de las consultas de soporte: {{supportRetention}}. Puedes solicitar antes su eliminación; te informaremos si debemos conservar información concreta para atender un caso pendiente o cumplir una obligación legal."
+          ]
+        },
+        {
+          "title": "Visitas al sitio web",
+          "paragraphs": [
+            "Proveedor de alojamiento: {{hostingProvider}}. Al abrir una página web, Cloudflare procesa datos técnicos de la solicitud, como la dirección IP y datos del tráfico, para entregar el contenido y mantener la seguridad y disponibilidad del servicio. Esto es independiente del procesamiento local de tus fotos en la app.",
+            "No incorporamos publicidad, formularios, herramientas de analítica ni cookies propias en las páginas de FotoSwipe. No activamos Workers Logs ni Workers Traces. Esto no significa que Cloudflare no procese registros técnicos o información de seguridad: ese tratamiento y su conservación dependen del servicio y de las políticas aplicables de Cloudflare.",
+            "La portada general de ATS carga imágenes de juegos desde Steam. Al visitarla, tu navegador también se conecta a ese proveedor. Las páginas de FotoSwipe utilizan recursos locales; los enlaces externos te llevan al servicio correspondiente cuando los seleccionas."
+          ]
+        },
+        {
+          "title": "Finalidades y proveedores",
+          "paragraphs": [
+            "Tratamos los datos de soporte para atender tus solicitudes y los datos técnicos del sitio para prestar y proteger el servicio. Cuando la legislación requiera una base jurídica, utilizamos la ejecución de la relación de servicio para las consultas relacionadas con ella, nuestro interés legítimo en responder otras consultas y mantener la seguridad, y el cumplimiento de obligaciones legales cuando proceda.",
+            "No vendemos tus datos ni los utilizamos para seguimiento publicitario. Apple presta los servicios de Fotos, iCloud, compras y correo descritos arriba; Cloudflare presta el alojamiento y la protección del sitio. Estos proveedores pueden procesar información en países distintos del tuyo o de Hong Kong, conforme a sus condiciones y mecanismos de protección aplicables. No prometemos que los datos del correo o del sitio permanezcan exclusivamente en Hong Kong.",
+            "El plazo de conservación indicado se aplica a las consultas de soporte bajo nuestro control; no fija los plazos de Apple para compras, Fotos, diagnósticos o copias de seguridad, ni los de Cloudflare para su información técnica. Borrar una consulta del buzón no supone el borrado inmediato de todas las copias de respaldo que pueda mantener el proveedor."
           ]
         },
         {
           "title": "Tus opciones y contacto",
           "paragraphs": [
-            "Puedes modificar permisos en Ajustes y borrar los datos locales eliminando la app. Para consultas sobre privacidad o ejercer los derechos que te correspondan según la legislación aplicable, utiliza el contacto del responsable indicado en esta página. El desarrollador no tiene acceso remoto a tu biblioteca para consultar o borrar tus fotos.",
-            "La fecha de esta política identifica su versión. Los cambios en funciones, proveedores o tratamiento de datos requieren actualizarla."
+            "Puedes modificar los permisos de Fotos en Ajustes y borrar los datos locales eliminando la app. FotoSwipe no tiene cuentas propias que debas cancelar. El desarrollador no tiene acceso remoto a tu biblioteca para consultar o borrar tus fotos.",
+            "Para solicitar acceso, corrección o eliminación de los datos que nos hayas enviado, o ejercer otros derechos que te correspondan según la legislación aplicable, escribe al correo indicado en esta página. Podemos pedir la información mínima necesaria para verificar que la solicitud es tuya. También puedes presentar una reclamación ante la autoridad de protección de datos competente, incluida la Oficina del Comisionado de Privacidad para los Datos Personales de Hong Kong.",
+            "La fecha de esta política identifica su versión. Actualizaremos el texto cuando cambien las funciones, los proveedores o el tratamiento de datos."
           ]
         }
       ]
@@ -127,6 +150,6 @@
       ]
     }
   ],
-  "hostingProvider": "",
-  "supportRetention": ""
+  "hostingProvider": "Cloudflare (alojamiento estático, distribución y protección del sitio web)",
+  "supportRetention": "Hasta 12 meses desde el cierre de la consulta para atender seguimientos relacionados. Eliminamos antes los adjuntos que ya no sean necesarios. Si una consulta sigue abierta o existe una obligación legal de conservación, conservamos únicamente la información necesaria durante el tiempo que lo justifique y la eliminamos al terminar esa necesidad"
 }
