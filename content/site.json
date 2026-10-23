@@ -1,0 +1,72 @@
+{
+  "company": "After The Singularity Games Ltd",
+  "brand": "After the Singularity Games",
+  "domain": "https://atsgames.com",
+  "email": "jorgere.1@icloud.com",
+  "year": 2026,
+  "intro": "Independent games and apps. New worlds to explore, and thoughtful tools for everyday life.",
+  "games": [
+    {
+      "name": "Invasion, Tales of Tower Defense",
+      "description": "Build your defenses, upgrade your towers and face endless waves across procedurally generated maps.",
+      "status": "Available on Steam",
+      "tags": [
+        "Strategy",
+        "Tower defense"
+      ],
+      "url": "https://store.steampowered.com/app/2665640/",
+      "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2665640/header.jpg?t=1752762162"
+    },
+    {
+      "name": "Lost Galaxy: Echoes of War",
+      "description": "Build a high-tech colony, manage resources and defend humanity’s foothold on a hostile alien world.",
+      "status": "Coming soon",
+      "tags": [
+        "Base building",
+        "Sci-fi"
+      ],
+      "url": "https://store.steampowered.com/app/3810970/",
+      "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3810970/cbdf72a57b221673f658740250c04270305bac6a/header.jpg?t=1752762255"
+    }
+  ],
+  "apps": [
+    {
+      "id": "fotoswipe",
+      "name": "FotoSwipe",
+      "icon": "/assets/fotoswipe.svg",
+      "language": "es",
+      "status": "En preparación para iPhone y iPad",
+      "summary": "Dale espacio a tus mejores recuerdos.",
+      "description": "Revisa, edita y organiza tu biblioteca de Fotos, una imagen a la vez.",
+      "legalFile": "apps/fotoswipe-legal.json",
+      "features": [
+        {
+          "title": "Revisa a tu ritmo",
+          "text": "Conserva lo que importa y reúne lo que quieres descartar. El borrado solo se solicita cuando revisas y confirmas la bandeja."
+        },
+        {
+          "title": "Organiza y edita",
+          "text": "Usa álbumes, favoritos y ajustes de imagen. Al guardar una edición en Fotos, se conserva el original."
+        },
+        {
+          "title": "Tus fotos, en tu dispositivo",
+          "text": "La revisión y la comparación se procesan localmente. FotoSwipe no envía tu biblioteca a un servidor del desarrollador."
+        }
+      ]
+    }
+  ],
+  "home": {
+    "eyebrow": "Independent studio / Hong Kong",
+    "headline": [
+      "New worlds.",
+      "Everyday tools."
+    ],
+    "description": "We make games to get lost in and apps that make everyday life a little simpler.",
+    "workTitle": "A few things we’re making.",
+    "workLabel": "Games & applications",
+    "aboutTitle": "Small studio.\nRoom to explore.",
+    "aboutText": "After The Singularity Games Ltd is an independent company based in Hong Kong. Our work spans strategy games, new worlds and useful apps for everyday life.",
+    "contactTitle": "Let’s talk.",
+    "contactText": "Questions about our games or apps? We’d like to hear from you."
+  }
+}

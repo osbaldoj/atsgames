@@ -1,0 +1,132 @@
+{
+  "version": "2026-10-23",
+  "operatorName": "After The Singularity Games Ltd",
+  "supportEmail": "jorgere.1@icloud.com",
+  "privacyURL": "",
+  "supportURL": "",
+  "eulaURL": "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+  "refundURL": "https://support.apple.com/es-es/118223",
+  "documents": [
+    {
+      "id": "privacy",
+      "title": "Política de privacidad",
+      "sections": [
+        {
+          "title": "Qué hace FotoSwipe",
+          "paragraphs": [
+            "FotoSwipe permite revisar, editar y organizar la biblioteca de Fotos. No requiere una cuenta propia ni integra publicidad, seguimiento o analítica de terceros. No enviamos fotos ni vídeos a un servidor del desarrollador."
+          ]
+        },
+        {
+          "title": "Fotos y permisos",
+          "paragraphs": [
+            "Tú eliges el acceso completo o limitado en iOS. FotoSwipe consulta imágenes, vídeos, fechas, favoritos, formatos y álbumes mediante PhotoKit para mostrar, filtrar y organizar los elementos autorizados. La comparación visual se realiza en el dispositivo.",
+            "Los cambios de favoritos, álbumes y borrados se solicitan a Fotos al usar esas acciones. Descartar con un gesto solo prepara una revisión local: el borrado requiere confirmar la bandeja y el diálogo de Fotos. Puedes retirar o limitar el permiso desde Ajustes.",
+            "Al guardar una edición, FotoSwipe entrega a Fotos la imagen procesada y los ajustes necesarios para volver a editarla. El procesamiento ocurre en el dispositivo y Fotos conserva el original. La sincronización de estas ediciones depende de tu configuración de Fotos e iCloud."
+          ]
+        },
+        {
+          "title": "Datos guardados en el dispositivo",
+          "paragraphs": [
+            "Se guardan identificadores de elementos, decisiones, historial de revisión, filtros, preferencias, sesión y cuota diaria para reanudar la revisión. La bienvenida guarda una preferencia local. Estos datos se conservan hasta que se modifican mediante las funciones de la app o se elimina su almacenamiento al borrar la app; desinstalar conservando datos no equivale a borrarlos.",
+            "No sincronizamos el progreso mediante un servidor propio. iOS puede incluir estos datos en copias de seguridad. Borrar la app no revierte cambios ya realizados en Fotos ni elimina las compras gestionadas por Apple."
+          ]
+        },
+        {
+          "title": "Servicios de Apple",
+          "paragraphs": [
+            "Fotos puede descargar recursos desde iCloud y sincronizar cambios entre dispositivos según tu configuración. Apple gestiona los pagos y facilita transacciones para verificar y restaurar Pro; FotoSwipe no recibe datos de tarjeta. Estos servicios están sujetos a las condiciones y políticas de Apple.",
+            "No integramos un servicio propio de diagnósticos. Apple puede gestionar diagnósticos y reportes según los permisos y ajustes de tu dispositivo, o los mecanismos de prueba de TestFlight."
+          ]
+        },
+        {
+          "title": "Soporte y sitio web",
+          "paragraphs": [
+            "Si contactas voluntariamente por correo, recibiremos la dirección y el contenido que decidas enviar para responder. No se adjuntan fotos ni datos de la biblioteca automáticamente. Evita enviar información sensible que no sea necesaria.",
+            "Las páginas preparadas para FotoSwipe no incorporan cookies, analítica, formularios ni recursos de terceros. El proveedor donde se alojen puede procesar datos técnicos de conexión. Proveedor de alojamiento: {{hostingProvider}}.",
+            "Conservación de las consultas de soporte: {{supportRetention}}."
+          ]
+        },
+        {
+          "title": "Tus opciones y contacto",
+          "paragraphs": [
+            "Puedes modificar permisos en Ajustes y borrar los datos locales eliminando la app. Para consultas sobre privacidad o ejercer los derechos que te correspondan según la legislación aplicable, utiliza el contacto del responsable indicado en esta página. El desarrollador no tiene acceso remoto a tu biblioteca para consultar o borrar tus fotos.",
+            "La fecha de esta política identifica su versión. Los cambios en funciones, proveedores o tratamiento de datos requieren actualizarla."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "title": "Ayuda y soporte",
+      "sections": [
+        {
+          "title": "Fotos que faltan o no cargan",
+          "paragraphs": [
+            "Con acceso limitado solo aparecen los elementos que autorices. Desde Ajustes puedes ampliar o retirar el permiso de Fotos. Si el original está en iCloud, comprueba la conexión y vuelve a abrirlo. Los tamaños desconocidos no se estiman."
+          ]
+        },
+        {
+          "title": "Descartar, borrar y deshacer",
+          "paragraphs": [
+            "Deslizar a la izquierda añade un elemento a la bandeja. Revisa esa bandeja para solicitar el borrado y confirma en Fotos. FotoSwipe no vacía Eliminado recientemente ni garantiza espacio libre inmediato.",
+            "Deshacer revierte decisiones de revisión; no revierte cambios de álbumes ni un borrado ya confirmado. Para recuperar un original borrado consulta Eliminado recientemente en Fotos, mientras siga disponible."
+          ]
+        },
+        {
+          "title": "Editar una foto",
+          "paragraphs": [
+            "La edición se guarda en el mismo elemento de Fotos y conserva el original. La imagen estática editada se exporta como JPEG SDR; no equivale a mantener el formato RAW o HDR del original. Puedes recuperar el original desde Fotos.",
+            "Las Live Photos se procesan con las herramientas de edición de Fotos. Si otra app modifica el elemento mientras lo editas, vuelve a abrirlo antes de guardar para evitar sobrescribir cambios más recientes."
+          ]
+        },
+        {
+          "title": "Cuota Free",
+          "paragraphs": [
+            "La cuota mostrada en la app cuenta elementos distintos revisados por día local al conservar, descartar u organizar. Ampliar, marcar favoritos, deshacer y confirmar la bandeja no consumen cuota. Deshacer no devuelve cuota. El progreso y el contador son locales a esta instalación."
+          ]
+        },
+        {
+          "title": "Compra y restauración",
+          "paragraphs": [
+            "Pro es una compra única, sin renovación automática. El precio vigente se muestra antes de comprar y lo proporciona App Store. Para recuperar una compra abre Pro y pulsa Restaurar compras con la misma cuenta de Apple.",
+            "Una compra pendiente se activará después de que Apple la confirme. Si Apple comunica una revocación o reembolso, la app puede volver a Free conservando las decisiones guardadas. Los reembolsos se solicitan a Apple y dependen de sus criterios y de los derechos aplicables."
+          ]
+        },
+        {
+          "title": "Pedir ayuda",
+          "paragraphs": [
+            "Indica la versión de FotoSwipe, tu versión de iOS y los pasos del problema. Puedes copiar la versión desde la app. No necesitamos tus fotos originales ni credenciales de Apple."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "terms",
+      "title": "Términos de uso",
+      "sections": [
+        {
+          "title": "Licencia de la app",
+          "paragraphs": [
+            "La distribución de FotoSwipe en App Store usa el contrato de licencia estándar de Apple (EULA), enlazado a continuación. Esta información de funcionamiento no sustituye ese contrato ni limita derechos legales que te correspondan."
+          ]
+        },
+        {
+          "title": "Free y Pro",
+          "paragraphs": [
+            "Free incluye las funciones y cuota indicadas en la app. Pro desbloquea las funciones descritas en su pantalla de compra mediante una compra única gestionada por Apple. No se promete que incluya servicios futuros aún no anunciados."
+          ]
+        },
+        {
+          "title": "Control de tu biblioteca",
+          "paragraphs": [
+            "Tú decides qué revisar, organizar o borrar. Las sugerencias de similitud pueden omitir coincidencias o agrupar imágenes diferentes. Revisa los resultados antes de confirmar; no son un detector exhaustivo de duplicados.",
+            "Fotos e iCloud pueden sincronizar los cambios con otros dispositivos. Añadir o quitar un álbum no equivale a borrar el original. Mantén las copias de tus recuerdos que consideres necesarias."
+          ]
+        }
+      ]
+    }
+  ],
+  "hostingProvider": "",
+  "supportRetention": ""
+}
