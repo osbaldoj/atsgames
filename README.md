@@ -53,13 +53,21 @@ npx wrangler login
 npm run deploy
 ```
 
-5. Validate the returned `workers.dev` URL, then add `atsgames.com` and `www.atsgames.com` as custom domains in the Cloudflare dashboard. No custom domain routes are configured locally until the zone is owned/active. Redirect www to the primary domain if desired.
+5. Validate the returned `workers.dev` URL, then add `atsgames.com` and `www.atsgames.com` as custom domains in the Cloudflare dashboard. Both verified custom domains are declared in `wrangler.jsonc` so future deployments retain them. Redirect www to the primary domain if desired.
 6. Verify public HTTPS, navigation, images, support, missing-policy 404 and mobile layout. Add actual privacy URL only after its content is complete.
 
-No account IDs or credentials belong in Git. No paid plan, database, server script or mail service is required for these static pages. Static asset requests are free; optional dynamic services have separate limits/pricing. Cloudflare and GoDaddy login/DNS setup remain required; a dry run is not a deployment.
+No account IDs or credentials belong in Git. No paid plan, database, server script or mail service is required for these static pages. Static asset requests are free; optional dynamic services have separate limits/pricing. The public build has been deployed through the dashboard; custom-domain setup is tracked below. A dry run by itself is not a deployment.
 
 ## Migration state
 
-Prepared on 2026-10-23 in `codex/cloudflare-fotoswipe`. The user requested a completely new design. The domain purchase at GoDaddy is user-confirmed; public DNS still pointed to GoDaddy at preparation time. Deployment awaits Cloudflare account access. Existing GitHub Pages configuration has not been removed, and production DNS has not been changed.
+Updated 2026-10-23 on `codex/cloudflare-fotoswipe`:
+
+- Live at https://atsgames.com/ and https://www.atsgames.com/ on Cloudflare Workers Static Assets. The dashboard confirms the zone is active and both domains route to production. GoDaddy remains the registrar; Cloudflare is the DNS/hosting provider on Free.
+- GoDaddy accepted the assigned nameservers `kia.ns.cloudflare.com` and `wells.ns.cloudflare.com`. Resolver caches can retain the prior delegation temporarily.
+- With the owner's explicit confirmation, the two imported parking A records and `www` CNAME were replaced by Worker custom domains. `_domainconnect` remains DNS-only and `_dmarc` is preserved. No mail service was configured.
+- Public HTTPS checks for both homepages, FotoSwipe, support and CSS match the local build. The platform canonicalizes `/fotoswipe/support.html` to `/fotoswipe/support` (307, then 200). Unfinished privacy and unknown paths return 404. Always Use HTTPS is enabled on the zone.
+- The fallback https://atsgames.jorgere-1.workers.dev/ remains available (dashboard asset version `9cb1dc80`). No paid plan, dynamic worker code or analytics script was enabled.
+- PR #1 records the replacement design. The old GitHub Pages deployment has not been removed; DNS now serves Cloudflare. Builds validate/package in GitHub Actions; publishing is currently manual through Cloudflare or Wrangler.
+- Privacy and terms remain unpublished until the owner's deferred retention decision and canonical legal fields are complete.
 
 Official references: [static assets setup](https://developers.cloudflare.com/workers/static-assets/get-started/), [pricing](https://developers.cloudflare.com/workers/static-assets/billing-and-limitations/), [custom domains](https://developers.cloudflare.com/workers/configuration/routing/custom-domains/).
