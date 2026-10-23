@@ -5,24 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="$description" />
     $robots
+    $seo
     <title>$title</title>
     <link rel="stylesheet" href="/assets/site.css" />
   </head>
   <body>
     <a class="skip" href="#main">$skip</a>
     <header class="site-header">
-      <a class="brand" href="/" aria-label="After the Singularity Games home"
+      <a class="brand" href="$home_url" aria-label="$brand_home"
         ><span class="brand-mark"
           >ats<span class="brand-dot" aria-hidden="true">✳</span></span
         ><span class="brand-name">After the<br />Singularity Games</span></a
       >
-      <nav aria-label="$nav_label">$navigation</nav>
+      <div class="header-navigation"><nav aria-label="$nav_label">$navigation</nav>
+      <nav class="language-switch" aria-label="$language_label">$languages</nav></div>
     </header>
     <main id="main">$body</main>
     <footer>
       <div>
         <strong>$company</strong>
-        <p>Hong Kong · © $year</p>
+        <p>$location · © $year</p>
       </div>
       <a href="mailto:$email">$email</a>
     </footer>

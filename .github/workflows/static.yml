@@ -15,6 +15,8 @@ jobs:
         run: python3 scripts/build.py
       - name: Check public output
         run: python3 scripts/check.py dist
+      - name: Check locale routing and legal translations
+        run: python3 -m unittest discover -s tests -v
       - uses: actions/upload-artifact@v4
         with:
           name: atsgames-static

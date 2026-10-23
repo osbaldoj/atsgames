@@ -1,0 +1,149 @@
+{
+  "sourceSHA256": "ad09fc2b6e6a21c99af111b993f8e9faa747056441a683c09c2adc4566d4d486",
+  "hostingProvider": "Cloudflare (static hosting, content delivery and website protection)",
+  "supportRetention": "Up to 12 months after the request is closed, to handle related follow-ups. We delete attachments that are no longer needed sooner. If a request remains open or there is a legal retention obligation, we keep only the necessary information for as long as justified and delete it when that need ends",
+  "documents": [
+    {
+      "id": "privacy",
+      "title": "Privacy policy",
+      "sections": [
+        {
+          "title": "Data controller and scope",
+          "paragraphs": [
+            "After The Singularity Games Ltd, based in Hong Kong, is responsible for the processing described in this policy. You can contact us using the email address shown on this page. This policy covers FotoSwipe, its support service and its pages at atsgames.com/fotoswipe/, including their translated versions."
+          ]
+        },
+        {
+          "title": "What FotoSwipe does",
+          "paragraphs": [
+            "FotoSwipe lets you review, edit and organize your Photos library. It does not require its own account or include advertising, tracking or third-party analytics. We do not send photos or videos to a developer server."
+          ]
+        },
+        {
+          "title": "Photos and permissions",
+          "paragraphs": [
+            "You choose full or limited access in iOS. FotoSwipe accesses images, videos, dates, favorites, formats and albums through PhotoKit to display, filter and organize the items you authorize. Visual comparison takes place on your device.",
+            "Changes to favorites and albums, and deletion requests, are sent to Photos when you use those actions. Discarding with a gesture only prepares a local review: deletion requires confirmation in the tray and in the Photos dialog. You can withdraw or limit permission in Settings.",
+            "When you save an edit, FotoSwipe provides Photos with the processed image and the adjustment data needed to edit it again. Processing takes place on your device, and Photos preserves the original. Syncing these edits depends on your Photos and iCloud settings."
+          ]
+        },
+        {
+          "title": "Data stored on your device",
+          "paragraphs": [
+            "Item identifiers, decisions, review history, filters, preferences, session information and the daily allowance are stored so you can resume reviewing. The welcome screen stores a local preference. This data remains until you change it through the app's features or remove the app's storage by deleting the app; offloading an app while keeping its data does not delete that data.",
+            "We do not sync progress through our own server. iOS may include this data in backups. Deleting the app does not undo changes already made in Photos or remove purchases managed by Apple."
+          ]
+        },
+        {
+          "title": "Apple services",
+          "paragraphs": [
+            "Photos may download resources from iCloud and sync changes between devices according to your settings. Apple manages payments and provides transactions to verify and restore Pro; FotoSwipe does not receive card details. These services are subject to Apple's terms and policies.",
+            "We do not integrate our own diagnostics service. Apple may handle diagnostics and reports according to your device permissions and settings, or through TestFlight testing mechanisms."
+          ]
+        },
+        {
+          "title": "Support requests",
+          "paragraphs": [
+            "If you voluntarily contact us by email, we receive your address, the name shown in the message, and any content and attachments you choose to send. We use them to respond, resolve the issue and handle related follow-ups, not for advertising. Photos and library data are not attached automatically. Avoid sending original photos, credentials or other sensitive information that is not needed.",
+            "The support mailbox uses Apple's iCloud Mail. Delivering and storing messages requires processing by the sender's and recipient's email providers. Only people authorized to provide support should access these requests.",
+            "Retention of support requests: {{supportRetention}}. You can request earlier deletion; we will tell you if we need to retain specific information to handle an open case or meet a legal obligation."
+          ]
+        },
+        {
+          "title": "Website visits",
+          "paragraphs": [
+            "Hosting provider: {{hostingProvider}}. When you open a web page, Cloudflare processes technical request data, such as your IP address and traffic data, to deliver content and maintain the service's security and availability. This is separate from the local processing of your photos in the app.",
+            "We do not add advertising, forms, analytics tools or our own cookies to FotoSwipe's pages. We have not enabled Workers Logs or Workers Traces. This does not mean that Cloudflare does not process technical logs or security information: that processing and retention depend on the service and Cloudflare's applicable policies.",
+            "The ATS website and FotoSwipe's pages use local assets. External links take you to the relevant service when you select them."
+          ]
+        },
+        {
+          "title": "Purposes and providers",
+          "paragraphs": [
+            "We process support data to handle your requests and website technical data to provide and protect the service. Where the law requires a legal basis, we rely on performance of the service relationship for requests related to it, our legitimate interest in answering other requests and maintaining security, and compliance with legal obligations where applicable.",
+            "We do not sell your data or use it for advertising tracking. Apple provides the Photos, iCloud, purchase and email services described above; Cloudflare provides website hosting and protection. These providers may process information in countries other than yours or Hong Kong, under their applicable terms and safeguards. We do not promise that email or website data will remain exclusively in Hong Kong.",
+            "The stated retention period applies to support requests under our control; it does not set Apple's retention periods for purchases, Photos, diagnostics or backups, or Cloudflare's periods for technical information. Deleting a request from the mailbox does not mean that every backup copy a provider may hold is deleted immediately."
+          ]
+        },
+        {
+          "title": "Your choices and contact",
+          "paragraphs": [
+            "You can change Photos permissions in Settings and delete local data by deleting the app. FotoSwipe has no accounts of its own for you to close. The developer cannot remotely access your library to view or delete your photos.",
+            "To request access, correction or deletion of data you have sent us, or exercise other rights available to you under applicable law, write to the email address shown on this page. We may ask for the minimum information needed to verify that the request is yours. You can also complain to the competent data protection authority, including Hong Kong's Office of the Privacy Commissioner for Personal Data.",
+            "The date of this policy identifies its version. We will update the text when features, providers or data processing change."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "title": "Help & support",
+      "sections": [
+        {
+          "title": "Missing photos or items that will not load",
+          "paragraphs": [
+            "With limited access, only the items you authorize appear. You can expand or withdraw Photos permission in Settings. If the original is in iCloud, check your connection and open it again. Unknown file sizes are not estimated."
+          ]
+        },
+        {
+          "title": "Discarding, deleting and undoing",
+          "paragraphs": [
+            "Swiping left adds an item to the tray. Review the tray to request deletion, then confirm in Photos. FotoSwipe does not empty Recently Deleted or guarantee immediate free space.",
+            "Undo reverses review decisions; it does not reverse album changes or an already confirmed deletion. To recover a deleted original, check Recently Deleted in Photos while it remains available."
+          ]
+        },
+        {
+          "title": "Editing a photo",
+          "paragraphs": [
+            "An edit is saved to the same Photos item and preserves the original. An edited still image is exported as SDR JPEG; this does not preserve the original's RAW or HDR format. You can restore the original in Photos.",
+            "Live Photos are processed using Photos editing tools. If another app changes the item while you are editing it, open it again before saving to avoid overwriting more recent changes."
+          ]
+        },
+        {
+          "title": "Free allowance",
+          "paragraphs": [
+            "The allowance shown in the app counts distinct items reviewed per local day when you keep, discard or organize them. Zooming in, marking favorites, undoing and confirming the tray do not use the allowance. Undo does not return allowance. Progress and the counter are local to this installation."
+          ]
+        },
+        {
+          "title": "Purchases and restoration",
+          "paragraphs": [
+            "Pro is a one-time purchase with no automatic renewal. The current price is shown before purchase and is provided by the App Store. To recover a purchase, open Pro and select Restore purchases using the same Apple account.",
+            "A pending purchase becomes active after Apple confirms it. If Apple reports a revocation or refund, the app may return to Free while keeping your saved decisions. Refunds are requested from Apple and depend on its criteria and applicable rights."
+          ]
+        },
+        {
+          "title": "Asking for help",
+          "paragraphs": [
+            "Include your FotoSwipe version, iOS version and the steps that led to the problem. You can copy the version from the app. We do not need your original photos or Apple credentials."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "terms",
+      "title": "Terms of use",
+      "sections": [
+        {
+          "title": "App license",
+          "paragraphs": [
+            "FotoSwipe's App Store distribution uses Apple's standard End User License Agreement (EULA), linked below. This information about how the app works does not replace that agreement or limit your legal rights."
+          ]
+        },
+        {
+          "title": "Free and Pro",
+          "paragraphs": [
+            "Free includes the features and allowance shown in the app. Pro unlocks the features described on its purchase screen through a one-time purchase managed by Apple. We do not promise that it includes future services that have not yet been announced."
+          ]
+        },
+        {
+          "title": "Control over your library",
+          "paragraphs": [
+            "You decide what to review, organize or delete. Similarity suggestions may miss matches or group different images together. Review the results before confirming; they are not an exhaustive duplicate detector.",
+            "Photos and iCloud may sync changes with other devices. Adding or removing an album is not the same as deleting the original. Keep any backups of your memories that you consider necessary."
+          ]
+        }
+      ]
+    }
+  ]
+}

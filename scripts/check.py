@@ -5,7 +5,7 @@ import sys
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit, unquote
-from build import ROOT, legal_ready
+from localization import ROOT, legal_ready, localized_legal, output_path, validate_locales
 
 class Links(HTMLParser):
     def __init__(self):
@@ -30,11 +30,14 @@ def check(directory):
             if target.is_dir(): target=target/'index.html'
             if not target.exists(): errors.append(f'{page}: broken local link {url}')
     config=json.loads((ROOT/'content/site.json').read_text())
-    for app in config['apps']:
-        legal=json.loads((ROOT/'content'/app['legalFile']).read_text())
-        if not legal_ready(legal):
-            for name in ('privacy.html','terms.html'):
-                if (directory/app['id']/name).exists(): errors.append('Unfinished legal document published: '+name)
+    validate_locales(config)
+    for locale in config['locales']:
+        for app in config['apps']:
+            legal, _ = localized_legal(app, locale['code'])
+            if not legal_ready(legal):
+                for name in ('privacy.html','terms.html'):
+                    if (directory/output_path(locale, app['id']+'/'+name)).exists():
+                        errors.append('Unfinished legal document published: '+name)
     if errors: raise SystemExit('\n'.join(errors))
     print(f'Checked {len(pages)} HTML pages: links, no scripts, no unfinished policies.')
 
