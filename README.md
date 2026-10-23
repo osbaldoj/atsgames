@@ -36,7 +36,7 @@ Sync from the native application's `FotoSwipe/Resources/LegalContent.json`:
 python3 scripts/sync_legal.py fotoswipe /absolute/path/to/LegalContent.json
 ```
 
-`build-manifest.json` records the source checksum and which pages were generated. Currently support is public-build eligible; privacy and terms remain excluded until operator, email, host, retention and public HTTPS URLs are complete. The user deferred the support-retention decision. Do not invent it. After publishing and verifying the final URLs, update the app's canonical JSON and import it again.
+`build-manifest.json` records the source checksum and which pages were generated. Privacy, support and terms are now complete and publicly available. The owner selected up to 12 months after case closure for support email retention, with early deletion of unnecessary attachments and limited exceptions. Public URLs and provider details match the native canonical JSON. Future changes must still be imported from that source.
 
 The corporate homepage uses the existing game header images hosted by Steam, which causes browser requests to that provider. FotoSwipe and its help pages use only local assets. There are no third-party fonts, counters, analytics scripts, forms or Steam iframes. Outbound links open the relevant external service only when selected.
 
@@ -65,9 +65,9 @@ Updated 2026-10-23 on `codex/cloudflare-fotoswipe`:
 - Live at https://atsgames.com/ and https://www.atsgames.com/ on Cloudflare Workers Static Assets. The dashboard confirms the zone is active and both domains route to production. GoDaddy remains the registrar; Cloudflare is the DNS/hosting provider on Free.
 - GoDaddy accepted the assigned nameservers `kia.ns.cloudflare.com` and `wells.ns.cloudflare.com`. Resolver caches can retain the prior delegation temporarily.
 - With the owner's explicit confirmation, the two imported parking A records and `www` CNAME were replaced by Worker custom domains. `_domainconnect` remains DNS-only and `_dmarc` is preserved. No mail service was configured.
-- Public HTTPS checks for both homepages, FotoSwipe, support and CSS match the local build. The platform canonicalizes `/fotoswipe/support.html` to `/fotoswipe/support` (307, then 200). Unfinished privacy and unknown paths return 404. Always Use HTTPS is enabled on the zone.
-- The fallback https://atsgames.jorgere-1.workers.dev/ remains available (dashboard asset version `9cb1dc80`). No paid plan, dynamic worker code or analytics script was enabled.
+- Public HTTPS checks for both homepages, FotoSwipe, support and CSS match the local build. The platform canonicalizes `/fotoswipe/support.html` to `/fotoswipe/support` (307, then 200). Unknown paths return 404. Always Use HTTPS is enabled on the zone.
+- The fallback https://atsgames.jorgere-1.workers.dev/ remains available (dashboard asset version `2493c531`). No paid plan, dynamic worker code or analytics script was enabled.
 - PR #1 records the replacement design. The old GitHub Pages deployment has not been removed; DNS now serves Cloudflare. Builds validate/package in GitHub Actions; publishing is currently manual through Cloudflare or Wrangler.
-- Privacy and terms remain unpublished until the owner's deferred retention decision and canonical legal fields are complete.
+- Privacy, support and terms are published at `/fotoswipe/privacy`, `/fotoswipe/support` and `/fotoswipe/terms`. Public responses match the generated files. This does not mean the app is submitted or approved by Apple.
 
 Official references: [static assets setup](https://developers.cloudflare.com/workers/static-assets/get-started/), [pricing](https://developers.cloudflare.com/workers/static-assets/billing-and-limitations/), [custom domains](https://developers.cloudflare.com/workers/configuration/routing/custom-domains/).
