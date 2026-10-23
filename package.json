@@ -1,0 +1,15 @@
+{
+  "name": "atsgames-website",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "python3 scripts/build.py",
+    "preview:build": "python3 scripts/build.py --preview",
+    "check": "python3 scripts/check.py dist",
+    "deploy": "npm run build && npm run check && wrangler deploy",
+    "dev": "npm run build && wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "4.152.0"
+  }
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64" fill="none">
+  <title>FotoSwipe</title>
+  <rect width="64" height="64" rx="18" fill="#253D30"/>
+  <rect x="8" y="16" width="4" height="32" rx="2" fill="#E38D7C"/>
+  <rect x="52" y="16" width="4" height="32" rx="2" fill="#BBDCA4"/>
+  <!-- Optical centering: shift the letter independently of the side bars. -->
+  <g transform="translate(1.5 0)">
+  <path d="M43 17C41.8 13.7 38.8 12.5 35.8 12.5C29.6 12.5 27.6 17.5 26.5 24L23.1 44.1C22.5 47.6 21.5 49.6 19.7 50.8L20.3 52C26 51.8 28.8 49 29.9 42.3L32.7 24C33.5 18.5 34.4 15.8 36.8 15.8C38.3 15.8 38.5 17.1 38.9 18.4C39.4 20.4 42.8 20.1 43 17Z" fill="#EDF1DA"/>
+  <path d="M20 27H42L41.3 30H19.4L20 27Z" fill="#EDF1DA"/>
+  </g>
+</svg>
