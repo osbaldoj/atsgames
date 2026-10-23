@@ -1,0 +1,92 @@
+{
+  "ui": {
+    "skip": "Skip to content",
+    "navigation": "Main navigation",
+    "language": "Language",
+    "brandHome": "After the Singularity Games home",
+    "games": "Games",
+    "apps": "Apps",
+    "contact": "Contact",
+    "help": "Help",
+    "game": "GAME",
+    "app": "APP",
+    "onSteam": "{name} on Steam",
+    "exploreSteam": "Explore on Steam",
+    "learnApp": "Discover {name}",
+    "helpSupport": "Help & support",
+    "privacy": "Privacy",
+    "needHelp": "Need help with {name}?",
+    "helpIntro": "Find answers or contact us directly.",
+    "viewHelp": "Get help",
+    "documents": "Documents",
+    "operator": "Data controller",
+    "appleRefunds": "Apple refund support",
+    "appleEula": "Apple standard EULA",
+    "draft": "LOCAL DRAFT · Privacy and terms are not ready for publication.",
+    "pending": "TO BE COMPLETED",
+    "siteTitle": "Apps",
+    "explore": "Explore our work",
+    "studio": "The studio",
+    "conversation": "Start a conversation",
+    "getInTouch": "Get in touch",
+    "notFoundTitle": "Page not found",
+    "notFoundHeading": "Nothing here yet.",
+    "notFoundText": "The page may have moved or is not available.",
+    "backHome": "Back to ATS",
+    "location": "Hong Kong"
+  },
+  "intro": "Independent apps and thoughtful tools for everyday life.",
+  "home": {
+    "eyebrow": "Independent studio / Hong Kong",
+    "headline": [
+      "Thoughtful apps.",
+      "Everyday tools."
+    ],
+    "description": "We make useful apps that make everyday life a little simpler.",
+    "workTitle": "A few things we’re making.",
+    "workLabel": "Our apps",
+    "aboutTitle": "Small studio.\nRoom to explore.",
+    "aboutText": "After The Singularity Games Ltd is an independent company based in Hong Kong. We create useful apps with care for everyday details.",
+    "contactTitle": "Let’s talk.",
+    "contactText": "Questions about our apps? We’d like to hear from you."
+  },
+  "games": {
+    "invasion": {
+      "description": "Build your defenses, upgrade your towers and face endless waves across procedurally generated maps.",
+      "status": "Available on Steam",
+      "tags": [
+        "Strategy",
+        "Tower defense"
+      ]
+    },
+    "lost-galaxy": {
+      "description": "Build a high-tech colony, manage resources and defend humanity’s foothold on a hostile alien world.",
+      "status": "Coming soon",
+      "tags": [
+        "Base building",
+        "Sci-fi"
+      ]
+    }
+  },
+  "apps": {
+    "fotoswipe": {
+      "status": "In preparation for iPhone and iPad",
+      "summary": "Make room for your best memories.",
+      "description": "Review, edit and organize your Photos library, one image at a time.",
+      "features": [
+        {
+          "title": "Review at your own pace",
+          "text": "Keep what matters and gather what you want to discard. Deletion is requested only after you review and confirm the tray."
+        },
+        {
+          "title": "Organize and edit",
+          "text": "Use albums, favorites and image adjustments. When you save an edit in Photos, the original is preserved."
+        },
+        {
+          "title": "Your photos, on your device",
+          "text": "Review and comparison are processed locally. FotoSwipe does not send your library to a developer server."
+        }
+      ]
+    }
+  }
+}

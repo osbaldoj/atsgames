@@ -58,7 +58,7 @@
           "paragraphs": [
             "Proveedor de alojamiento: {{hostingProvider}}. Al abrir una página web, Cloudflare procesa datos técnicos de la solicitud, como la dirección IP y datos del tráfico, para entregar el contenido y mantener la seguridad y disponibilidad del servicio. Esto es independiente del procesamiento local de tus fotos en la app.",
             "No incorporamos publicidad, formularios, herramientas de analítica ni cookies propias en las páginas de FotoSwipe. No activamos Workers Logs ni Workers Traces. Esto no significa que Cloudflare no procese registros técnicos o información de seguridad: ese tratamiento y su conservación dependen del servicio y de las políticas aplicables de Cloudflare.",
-            "La portada general de ATS carga imágenes de juegos desde Steam. Al visitarla, tu navegador también se conecta a ese proveedor. Las páginas de FotoSwipe utilizan recursos locales; los enlaces externos te llevan al servicio correspondiente cuando los seleccionas."
+            "La web de ATS y las páginas de FotoSwipe utilizan recursos locales. Los enlaces externos te llevan al servicio correspondiente cuando los seleccionas."
           ]
         },
         {

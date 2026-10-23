@@ -1,10 +1,10 @@
 # ATS Games & Apps
 
-New static website for **After The Singularity Games Ltd**, built for Cloudflare Workers Static Assets. Existing game listings are retained; the former layout, tracking counter, embeds and placeholder biography are replaced. FotoSwipe is labelled as preparing for launch.
+New static website for **After The Singularity Games Ltd**, built for Cloudflare Workers Static Assets. Game listings are retained in the catalogue but hidden from the published site; the former layout, tracking counter, embeds and placeholder biography are replaced. FotoSwipe is labelled as preparing for launch.
 
 ## Content and generation
 
-- `content/site.json`: company identity, games, app catalogue, home-page copy. Add products here.
+- `content/site.json`: company identity, product catalogue and locale configuration. Set a game’s `published` flag to control whether its listing and navigation appear.
 - `content/apps/*-legal.json`: imported snapshots of each app's canonical legal content. Do not maintain a separate policy by hand.
 - `templates/page.html`: shared HTML shell.
 - `assets/site.css`: responsive design and shared tokens; local assets contain the approved FotoSwipe mark.
@@ -14,6 +14,7 @@ New static website for **After The Singularity Games Ltd**, built for Cloudflare
 ```sh
 python3 scripts/build.py
 python3 scripts/check.py dist
+python3 -m unittest discover -s tests -v
 python3 -m http.server 4177 --bind 127.0.0.1 --directory dist
 ```
 
@@ -28,6 +29,16 @@ python3 -m http.server 4178 --bind 127.0.0.1 --directory dist-preview
 
 Never upload `dist-preview`. It contains draft notices and `noindex`, which is not an access-control mechanism. Wrangler points exclusively at `dist`.
 
+## Languages
+
+English is the default at `/`; Spanish is available at `/es/`. Every page includes a language selector that preserves the current page. Language choices are ordinary links, without JavaScript, cookies or automatic redirects.
+
+- Shared product identities live in `content/site.json`; translated marketing and interface copy lives in `content/locales/`.
+- Add a locale by adding its unique code, path prefix and catalog to `locales`, translating all catalog fields and adding each app’s legal translation file. The default locale alone uses the root path.
+- Legal content is authored in Spanish in the native app. Reviewed translations in `content/apps/` record the SHA-256 of that imported source. After syncing changes, review the full translation before updating its checksum; do not merely refresh the checksum to bypass review.
+- Builds reject incomplete catalogs, missing legal paragraphs, changed placeholders and translations tied to an old source. The native app’s language is unaffected.
+- Canonical links, reciprocal `hreflang`, English `x-default` and the sitemap are generated from locale configuration.
+
 ## FotoSwipe legal source
 
 Sync from the native application's `FotoSwipe/Resources/LegalContent.json`:
@@ -38,7 +49,7 @@ python3 scripts/sync_legal.py fotoswipe /absolute/path/to/LegalContent.json
 
 `build-manifest.json` records the source checksum and which pages were generated. Privacy, support and terms are now complete and publicly available. The owner selected up to 12 months after case closure for support email retention, with early deletion of unnecessary attachments and limited exceptions. Public URLs and provider details match the native canonical JSON. Future changes must still be imported from that source.
 
-The corporate homepage uses the existing game header images hosted by Steam, which causes browser requests to that provider. FotoSwipe and its help pages use only local assets. There are no third-party fonts, counters, analytics scripts, forms or Steam iframes. Outbound links open the relevant external service only when selected.
+The published website uses only local assets. Hidden game listings do not emit images or links into the output. Re-enabling those Steam-hosted images requires reviewing the website privacy disclosure first. There are no third-party fonts, counters, analytics scripts, forms or Steam iframes. Outbound links open the relevant external service only when selected.
 
 ## Cloudflare (Free)
 
